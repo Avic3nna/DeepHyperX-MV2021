@@ -130,3 +130,7 @@ dmypy.json
 
 #model checkpoints
 *.pth
+
+#datasets
+*.dat
+*.hdr

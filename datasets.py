@@ -310,13 +310,6 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
             "Warning: NaN have been found in the data. It is preferable to remove them beforehand. Learning on NaN data is disabled."
         )
         
-    ######################
-    
-    
-    # This only works for 1 image still!!
-    
-    ~~CHANGE THIS TO HANDLE MULTIPLE~~~~
-    ######################
     img[nan_mask] = 0
     gt[nan_mask] = 0
     ignored_labels.append(0)

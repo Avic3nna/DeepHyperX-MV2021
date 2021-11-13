@@ -53,17 +53,9 @@ def dfc2018_loader(folder):
     return img, gt, rgb_bands, ignored_labels, label_values, palette
 
 def water_loader(folder):
-    #add multiple images ??
-    img_list = np.empty((1,2))
-    gt_list = np.empty((1,2))
-    for file in os.listdir(folder):
-        if file.endswith(".hdr"):
-            np.append(img_list, open_file(folder + file))
-        
-        elif file.endswith('.tiff'):
-            gt = open_file(folder + file)
-            gt = gt.astype("uint8")
-            np.append(gt_list, gt)
+    img = open_file(folder + "REFLECTANCE_2021-09-12_003.hdr")
+    gt = open_file(folder + "label003.tiff")
+    gt = gt.astype("uint8")
 
     rgb_bands = (47, 31, 15)
 
@@ -83,4 +75,4 @@ def water_loader(folder):
     ]
     ignored_labels = [0]
     palette = None
-    return img_list, gt_list, rgb_bands, ignored_labels, label_values, palette
+    return img, gt, rgb_bands, ignored_labels, label_values, palette
