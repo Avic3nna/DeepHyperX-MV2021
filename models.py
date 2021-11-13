@@ -1040,6 +1040,8 @@ def train(
 
     for e in tqdm(range(1, epoch + 1), desc="Training the network"):
         # Set the network to training mode
+        #print('Data loader length: %i\n\n' % len(data_loader))
+ 
         net.train()
         avg_loss = 0.0
 

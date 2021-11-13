@@ -303,6 +303,12 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
             palette,
         ) = CUSTOM_DATASETS_CONFIG[dataset_name]["loader"](folder)
 
+
+    #### .mat loader here
+    # print('THIS IS IMAGE:\n')
+    # print(img['data'])
+    img = np.array(img['data'])
+    
     # Filter NaN out
     nan_mask = np.isnan(img.sum(axis=-1))
     if np.count_nonzero(nan_mask) > 0:
@@ -310,9 +316,9 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
             "Warning: NaN have been found in the data. It is preferable to remove them beforehand. Learning on NaN data is disabled."
         )
         
-    img[nan_mask] = 0
-    gt[nan_mask] = 0
-    ignored_labels.append(0)
+    # img[nan_mask] = 0
+    # gt[nan_mask] = 0
+    # ignored_labels.append(0)
 
     ignored_labels = list(set(ignored_labels))
     # Normalization

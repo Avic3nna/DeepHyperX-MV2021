@@ -1,5 +1,5 @@
 numpy>=1.10.0
-spectral==0.19
+spectral>=0.22
 scipy>=0.19.0
 tqdm>=4.15.0
 visdom>=0.1.5

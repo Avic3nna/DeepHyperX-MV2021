@@ -10,8 +10,8 @@ CUSTOM_DATASETS_CONFIG = {
         "loader": lambda folder: dfc2018_loader(folder),
     },
     "WATER_HSI": {
-        "img": "REFLECTANCE_2021-09-12_003.hdr",
-        "gt": "labels.tiff",
+        "img": "hsi_water_train.mat",
+        "gt": "hsi_water_train_gt.tiff",
         "download": False,
         "loader": lambda folder: water_loader(folder),
     }
@@ -53,8 +53,8 @@ def dfc2018_loader(folder):
     return img, gt, rgb_bands, ignored_labels, label_values, palette
 
 def water_loader(folder):
-    img = open_file(folder + "REFLECTANCE_2021-09-12_003.hdr")
-    gt = open_file(folder + "label003.tiff")
+    img = open_file(folder + "hsi_water_train.mat")
+    gt = open_file(folder + "hsi_water_train_gt.tiff")
     gt = gt.astype("uint8")
 
     rgb_bands = (47, 31, 15)
