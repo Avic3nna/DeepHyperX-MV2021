@@ -231,7 +231,7 @@ if args.download is not None and len(args.download) > 0:
         get_dataset(dataset, target_folder=FOLDER)
     quit()
 
-viz = visdom.Visdom(env=DATASET + " " + MODEL, port=1338) #1338 for AI lab running!
+viz = visdom.Visdom(env=DATASET + " " + MODEL, port=1337) #1338 for AI lab running!
 if not viz.check_connection:
     print("Visdom is not connected. Did you run 'python -m visdom.server' ?")
 
