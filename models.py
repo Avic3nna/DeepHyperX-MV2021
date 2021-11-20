@@ -30,13 +30,14 @@ def get_model(name, **kwargs):
         criterion: PyTorch loss Function
         kwargs: hyperparameters with sane defaults
     """
-    device = kwargs.setdefault("device", torch.device("cpu"))
+    #device = kwargs.setdefault("device", torch.device("cpu")) # Change
+    device = kwargs["device"]
     n_classes = kwargs["n_classes"]
     n_bands = kwargs["n_bands"]
     weights = torch.ones(n_classes)
     weights[torch.LongTensor(kwargs["ignored_labels"])] = 0.0
-    #weights = weights.to(device) ## CHANGEEE
-    weights = weights.to(kwargs["device"])
+    weights = weights.to(device) ## CHANGEEE
+    #weights = weights.to(kwargs["device"])
     weights = kwargs.setdefault("weights", weights)
 
     if name == "nn":
