@@ -1,1 +1,0 @@
-labels = open_file('.\\Datasets\\WATER_HSI\\labels.tiff')
