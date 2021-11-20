@@ -65,26 +65,26 @@ parser.add_argument(
     type=str,
     default=None,
     help="Model to train. Available:\n"
-    "SVM (linear), "
-    "SVM_grid (grid search on linear, poly and RBF kernels), "
-    "baseline (fully connected NN), "
-    "hu (1D CNN), "
-    "hamida (3D CNN + 1D classifier), "
-    "lee (3D FCN), "
-    "chen (3D CNN), "
-    "li (3D CNN), "
-    "he (3D CNN), "
-    "luo (3D CNN), "
-    "sharma (2D CNN), "
-    "boulch (1D semi-supervised CNN), "
-    "liu (3D semi-supervised CNN), "
-    "mou (1D RNN)",
+         "SVM (linear), "
+         "SVM_grid (grid search on linear, poly and RBF kernels), "
+         "baseline (fully connected NN), "
+         "hu (1D CNN), "
+         "hamida (3D CNN + 1D classifier), "
+         "lee (3D FCN), "
+         "chen (3D CNN), "
+         "li (3D CNN), "
+         "he (3D CNN), "
+         "luo (3D CNN), "
+         "sharma (2D CNN), "
+         "boulch (1D semi-supervised CNN), "
+         "liu (3D semi-supervised CNN), "
+         "mou (1D RNN)",
 )
 parser.add_argument(
     "--folder",
     type=str,
     help="Folder where to store the "
-    "datasets (defaults to the current working directory).",
+         "datasets (defaults to the current working directory).",
     default="./Datasets/",
 )
 parser.add_argument(
@@ -120,14 +120,14 @@ group_dataset.add_argument(
     type=str,
     default=None,
     help="Path to the train ground truth (optional, this "
-    "supersedes the --sampling_mode option)",
+         "supersedes the --sampling_mode option)",
 )
 group_dataset.add_argument(
     "--test_set",
     type=str,
     default=None,
     help="Path to the test set (optional, by default "
-    "the test_set is the entire ground truth minus the training)",
+         "the test_set is the entire ground truth minus the training)",
 )
 # Training options
 group_train = parser.add_argument_group("Training")
@@ -140,7 +140,7 @@ group_train.add_argument(
     "--patch_size",
     type=int,
     help="Size of the spatial neighbourhood (optional, if "
-    "absent will be set by the model)",
+         "absent will be set by the model)",
 )
 group_train.add_argument(
     "--lr", type=float, help="Learning rate, set by the model if not specified."
@@ -187,7 +187,6 @@ parser.add_argument(
     help="Download the specified datasets and quits.",
 )
 
-
 args = parser.parse_args()
 
 CUDA_DEVICE = get_device(args.cuda)
@@ -231,10 +230,9 @@ if args.download is not None and len(args.download) > 0:
         get_dataset(dataset, target_folder=FOLDER)
     quit()
 
-viz = visdom.Visdom(env=DATASET + " " + MODEL, port=1337) #1338 for AI lab running!
+viz = visdom.Visdom(env=DATASET + " " + MODEL, port=1337)  # 1338 for AI lab running!
 if not viz.check_connection:
     print("Visdom is not connected. Did you run 'python -m visdom.server' ?")
-
 
 hyperparams = vars(args)
 # Load the dataset
@@ -370,7 +368,7 @@ for run in range(N_RUNS):
         # Change order of class balancing
         if CLASS_BALANCING:
             weights = compute_imf_weights(train_gt, N_CLASSES, IGNORED_LABELS)
-            hyperparams["weights"] = torch.from_numpy(weights, dtype=torch.float64) # Add.cuda()??
+            hyperparams["weights"] = torch.from_numpy(weights).float()  # Add.cuda()??
             hyperparams["weights"] = hyperparams["weights"].to(hyperparams["device"])
             weights = torch.from_numpy(weights)
             weights = weights.to(hyperparams["device"])
