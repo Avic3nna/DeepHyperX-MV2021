@@ -367,11 +367,15 @@ for run in range(N_RUNS):
         prediction = clf.predict(img.reshape(-1, N_BANDS))
         prediction = prediction.reshape(img.shape[:2])
     else:
+        # Change order of class balancing
         if CLASS_BALANCING:
             weights = compute_imf_weights(train_gt, N_CLASSES, IGNORED_LABELS)
             hyperparams["weights"] = torch.from_numpy(weights)
         # Neural network
         model, optimizer, loss, hyperparams = get_model(MODEL, **hyperparams)
+        if CLASS_BALANCING:
+            weights = compute_imf_weights(train_gt, N_CLASSES, IGNORED_LABELS)
+            hyperparams["weights"] = torch.from_numpy(weights)
         # Split train set in train/val
         train_gt, val_gt = sample_gt(train_gt, 0.95, mode="random")
         # Generate the dataset
