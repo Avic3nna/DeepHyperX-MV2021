@@ -370,7 +370,7 @@ for run in range(N_RUNS):
         # Change order of class balancing
         if CLASS_BALANCING:
             weights = compute_imf_weights(train_gt, N_CLASSES, IGNORED_LABELS)
-            hyperparams["weights"] = torch.from_numpy(weights) # Add.cuda()??
+            hyperparams["weights"] = torch.from_numpy(weights, dtype= torch.float64) # Add.cuda()??
             hyperparams["weights"] = hyperparams["weights"].to(hyperparams["device"])
             weights = torch.from_numpy(weights)
             weights = weights.to(hyperparams["device"])
