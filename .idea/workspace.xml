@@ -1,93 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Add files">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DeepHyperx.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/IndianPines/Indian_pines_corrected.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/IndianPines/Indian_pines_gt.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/WATER_HSI/REFLECTANCE_2021-09-12_003.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/WATER_HSI/REFLECTANCE_2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._.git" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._.idea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._Datasets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._License" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.___pycache__" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._custom_datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._inference.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/._utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._DeepHyperx.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._inspectionProfiles" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/._workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/inspectionProfiles/._Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/.idea/inspectionProfiles/._profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/._WATER_HSI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._.validated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._2021-09-12_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._capture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._labels.tiff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._manifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/._results" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._2021-09-12_003.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._DARKREF_2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._DARKREF_2021-09-12_003.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._WHITEDARKREF_2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._WHITEDARKREF_2021-09-12_003.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._WHITEREF_2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/capture/._WHITEREF_2021-09-12_003.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/metadata/._2021-09-12_003.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._REFLECTANCE_2021-09-12_003.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._REFLECTANCE_2021-09-12_003.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._REFLECTANCE_2021-09-12_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._RGBBACKGROUND_2021-09-12_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._RGBSCENE_2021-09-12_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/DeepHyperx/Datasets/WATER_HSI/results/._RGBVIEWFINDER_2021-09-12_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailab.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concat_all.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_dataset.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/newplot (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/newplot (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/newplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/visdom_image (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/visdom_image (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/visdom_image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputimg/firsttry/visdom_text.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tempCodeRunnerFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testyyy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" />
+    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Add snow loader">
+      <change beforePath="$PROJECT_DIR$/custom_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_datasets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +37,7 @@
       <workItem from="1636711484072" duration="2826000" />
       <workItem from="1636714331198" duration="2789000" />
       <workItem from="1636717722319" duration="32000" />
-      <workItem from="1637410029556" duration="289000" />
+      <workItem from="1637410029556" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1636711858315</created>
@@ -166,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636715258815</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add files">
+      <created>1637410456334</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637410456335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add snow loader">
+      <created>1637410483072</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637410483072</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files" />
+    <MESSAGE value="Add snow loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add snow loader" />
   </component>
 </project>

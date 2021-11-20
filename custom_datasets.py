@@ -58,6 +58,7 @@ def dfc2018_loader(folder):
     palette = None
     return img, gt, rgb_bands, ignored_labels, label_values, palette
 
+# undefined, rocks, gravel and dirt ignored
 def water_loader(folder):
     img = open_file(folder + "hsi_water_train.mat")
     gt = open_file(folder + "hsi_water_train_gt.tiff")
