@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Changes in models.py and main.py for class balancing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <workItem from="1636711484072" duration="2826000" />
       <workItem from="1636714331198" duration="2789000" />
       <workItem from="1636717722319" duration="32000" />
-      <workItem from="1637410029556" duration="6500000" />
+      <workItem from="1637410029556" duration="7456000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1636711858315</created>
@@ -172,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637418868706</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Changes in models.py and main.py for class balancing">
+      <created>1637419408106</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1637419408106</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Changes in models.py and main.py for class balancing">
+      <created>1637419429582</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1637419429582</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
