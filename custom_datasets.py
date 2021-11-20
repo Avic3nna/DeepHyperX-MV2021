@@ -89,7 +89,7 @@ def snow_loader(folder):
     gt = open_file(folder + "hsi_snow_train_gt.tiff")
     gt = gt.astype("uint8")
 
-    rgb_bands = (47, 31, 15)
+    rgb_bands = (10, 15, 25)
 
     label_values = [
         "undefined",
