@@ -14,6 +14,12 @@ CUSTOM_DATASETS_CONFIG = {
         "gt": "hsi_water_train_gt.tiff",
         "download": False,
         "loader": lambda folder: water_loader(folder),
+    },
+    "SNOW_HSI": {
+        "img": "hsi_snow_train.mat",
+        "gt": "hsi_snow_train_gt.tiff",
+        "download": False,
+        "loader": lambda folder: snow_loader(folder),
     }
 }
 
@@ -73,6 +79,31 @@ def water_loader(folder):
         "Dirt",
         "Mud",
     ]
-    ignored_labels = [0]
+    ignored_labels = [0,5,8,10]
+    palette = None
+    return img, gt, rgb_bands, ignored_labels, label_values, palette
+
+def snow_loader(folder):
+    img = open_file(folder + "hsi_snow_train.mat")
+    gt = open_file(folder + "hsi_snow_train_gt.tiff")
+    gt = gt.astype("uint8")
+
+    rgb_bands = (47, 31, 15)
+
+    label_values = [
+        "undefined",
+        "Grass",
+        "Concrete",
+        "Asphalt",
+        "Trees",
+        "Rocks",
+        "Water",
+        "Sky",
+        "Gravel",
+        "Object",
+        "Dirt",
+        "Mud",
+    ]
+    ignored_labels = [0,5,8,10]
     palette = None
     return img, gt, rgb_bands, ignored_labels, label_values, palette
