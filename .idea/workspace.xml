@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Add snow loader">
-      <change afterPath="$PROJECT_DIR$/visdom.sh" afterDir="false" />
+    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Add bash script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <workItem from="1636711484072" duration="2826000" />
       <workItem from="1636714331198" duration="2789000" />
       <workItem from="1636717722319" duration="32000" />
-      <workItem from="1637410029556" duration="749000" />
+      <workItem from="1637410029556" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1636711858315</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637410556144</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add bash script">
+      <created>1637411080241</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637411080241</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add files" />
     <MESSAGE value="Add snow loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add snow loader" />
+    <MESSAGE value="Add bash script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bash script" />
   </component>
 </project>
