@@ -29,7 +29,7 @@ def dfc2018_loader(folder):
     gt = open_file(folder + "2018_IEEE_GRSS_DFC_GT_TR.tif")
     gt = gt.astype("uint8")
 
-    rgb_bands = (47, 31, 15)
+    rgb_bands = (5, 10, 25)
 
     label_values = [
         "Unclassified",
@@ -64,7 +64,7 @@ def water_loader(folder):
     gt = open_file(folder + "hsi_water_train_gt.tiff")
     gt = gt.astype("uint8")
 
-    rgb_bands = (47, 31, 15)
+    rgb_bands = (10, 15, 25)
 
     label_values = [
         "undefined",
@@ -104,6 +104,8 @@ def snow_loader(folder):
         "Object",
         "Dirt",
         "Mud",
+        "Snow",
+        "Ice",
     ]
     ignored_labels = [0,5,8,10]
     palette = None

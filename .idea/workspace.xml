@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="Add more iterations">
-      <change beforePath="$PROJECT_DIR$/hamida.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hamida.sh" afterDir="false" />
+    <list default="true" id="0fdf6d7c-47ce-4952-94f7-7183d48b9900" name="Changes" comment="WATER hamida">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_datasets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
       <workItem from="1636711484072" duration="2826000" />
       <workItem from="1636714331198" duration="2789000" />
       <workItem from="1636717722319" duration="32000" />
-      <workItem from="1637410029556" duration="2729000" />
+      <workItem from="1637410029556" duration="3974000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1636711858315</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637412716794</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="WATER hamida">
+      <created>1637415010116</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637415010116</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +154,7 @@
     <MESSAGE value="Add snow loader" />
     <MESSAGE value="Add bash script" />
     <MESSAGE value="Add more iterations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more iterations" />
+    <MESSAGE value="WATER hamida" />
+    <option name="LAST_COMMIT_MESSAGE" value="WATER hamida" />
   </component>
 </project>
