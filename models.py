@@ -1057,6 +1057,8 @@ def train(
             optimizer.zero_grad()
             if supervision == "full":
                 output = net(data)
+                # Load into GPU (Change)
+                output = output.to(device)
                 loss = criterion(output, target)
             elif supervision == "semi":
                 outs = net(data)
